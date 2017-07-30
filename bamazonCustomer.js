@@ -68,6 +68,7 @@ var start = function() {
       var price = res[0].price;
       var productName = res[0].product_name;
       console.log(productName);
+      console.log('\n');
       if (stockQuantity < answer.quantity) {
         console.log('We do not have that many! Please pick a lower quantity.');
         console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
@@ -75,15 +76,19 @@ var start = function() {
         console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+
         productList();
 
       } else {
-        console.log("Thankyou for shopping!");
+          var totalCost = answer.quantity * price;
+          var newStock = stockQuantity - answer.quantity;
+        console.log(" Your total cost was "+totalCost+" Thankyou for shopping!");
         console.log("");
       }
 
       var item = answer.product;
-      var newStock = stockQuantity - answer.quantity;
+      // var totalCost = answer.quantity * price;
+      // var newStock = stockQuantity - answer.quantity;
       // console.log(newStock);
       // console.log(answer.product);
       // console.log(item);
@@ -93,7 +98,7 @@ var start = function() {
             throw err;
           }
 
-          
+
           moreStuff();
         });
 
@@ -118,6 +123,9 @@ var moreStuff = function (){
                 }
         else {
           console.log('Have a nice day!');
+          connection.end(function(err) {
+          console.log('Goodbye.');
+          });
                   }
         });
 };
