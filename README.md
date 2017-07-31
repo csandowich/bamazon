@@ -13,15 +13,15 @@ If you select more than we have in stock you will see an error message.
 
 ![Error message](error.png)
 
-Otherwise the total of your bill will be added and then ask you if you would like to buy anything else.
+Otherwise the total of your bill will be added and then you will be asked if you would like to buy anything else.
 
 ![Shows prompts and price total](cost.png)
 
-If you press **y** and **enter** then the purchase list will repopulate with updated stock quantity.
+If you press **y** and **enter** then the purchase list will repopulate with updated stock quantities.
 
 ![Buy More](buy.png)
 
-If you select **n** instead of **y** then "Have a nice day! Goodbye." will be the response message and then it will quite the app.
+If you select **n** instead of **y** then "Have a nice day! Goodbye." will be the response message and then it will quit the app.
 
 ![Bye](bye.png)
 
