@@ -24,3 +24,6 @@ If you press **y** and **enter** then the purchase list will repopulate with upd
 If you select **n** instead of **y** then "Have a nice day! Goodbye." will be the response message and then it will quite the app.
 
 ![Bye](bye.png)
+
+Video link showing the running app.
+https://youtu.be/VBFvmwu4YZc - automatic!
